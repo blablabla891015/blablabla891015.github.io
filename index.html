@@ -31,9 +31,16 @@
 <h3>Time</h3>
 <p>Date/Time: <span id="datetime"></span></p>
 <script>
+function t() {
 var dt = new Date();
-document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"-"+ (("0"+dt.getDate()).slice(-2)) +"-"+ (dt.getFullYear()) +" "+ 
+var x ;
+x= (("0"+(dt.getMonth()+1)).slice(-2)) +"-"+ (("0"+dt.getDate()).slice(-2)) +"-"+ (dt.getFullYear()) +" "+ 
    (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2)) +":"+ (("0"+dt.getSeconds()).slice(-2));
+return x
+}
+var f=t()
+document.getElementById("datetime").innerHTML=setInterval(f,1000)
+   
 </script>
 </body>
 </html>
