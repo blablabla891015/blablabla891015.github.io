@@ -27,8 +27,12 @@
    <li><a href="https://www.youtube.com/watch?v=uoqJy_AEt-E">泡溫泉</a></li> 
    <li><a href="https://www.youtube.com/watch?v=rn1-8UFZ_fU">我好愛你</a></li>
 </ul>
+<hr></hr>
 <h3>Time</h3>
-   Date/Time: <span id="datetime"></span>
-   <script src="js/7.js"></script>
+<p>Date/Time: <span id="datetime"></span></p>
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
 </body>
 </html>
