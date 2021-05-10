@@ -4,3 +4,6 @@ h3 {
 a:hover {
   background-color: red;
 }
+p {
+  text-align:center
+}
